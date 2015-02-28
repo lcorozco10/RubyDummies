@@ -10,7 +10,7 @@
 $var1 = "Variable Global"
 
 
-class MainClass
+class Ruby1
   #Contructor principal de la clase MainClass
   def initialize(name)
 
@@ -42,7 +42,7 @@ class MainClass
 end
 print 'Nombre: '
 nombre = gets().chomp()
-obj = MainClass.new(nombre)
+obj = Ruby1.new(nombre)
 puts obj.calculador("2".to_i,4.to_f)
 obj.variables()
 obj.bucles
