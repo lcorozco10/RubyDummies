@@ -27,9 +27,9 @@ class Ruby2
 			elsif respuesta == 'no'
 				print 'vote por el presidente 1 ,2 o 3: '
 
-				voto = gets().chomp()
+				voto = gets().chomp().to_i()
 
-				case voto.to_i()
+				case voto
 					when 1
 						puts 'votastes por el presidente 1.'
 					when 2
@@ -37,8 +37,8 @@ class Ruby2
 					when 3
 						puts 'votastes por el presidente 3.'
 					when 4..8
-						unless 5
-							puts '*'
+						unless voto == 4
+							puts 'tu ya habias votado'
 						end
 						puts 'Ustes es muy indeciso'
 					else
