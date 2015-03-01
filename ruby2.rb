@@ -1,6 +1,6 @@
 =begin
 
-	Autor:        Luis Orozco
+  Autor:        Luis Orozco
   Fecha:        27-02-2015
   descripcion:  Aprendiendo Ruby
 
@@ -26,6 +26,7 @@ class Ruby2
 				puts 'Ok solicitala ya'
 			elsif respuesta == 'no'
 				print 'vote por el presidente 1 ,2 o 3: '
+
 				voto = gets().chomp()
 
 				case voto.to_i()
@@ -36,6 +37,9 @@ class Ruby2
 					when 3
 						puts 'votastes por el presidente 3.'
 					when 4..8
+						unless 5
+							puts '*'
+						end
 						puts 'Ustes es muy indeciso'
 					else
 						puts 'tu voto fue nulo'
@@ -50,6 +54,7 @@ class Ruby2
 		end
 
 	end
+
 end
 print 'Cual es tu edad?: '
 edad = gets().chomp()
