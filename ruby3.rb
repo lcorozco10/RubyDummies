@@ -1,3 +1,11 @@
+=begin
+
+  Autor:        Luis Orozco
+  Fecha:        27-02-2015
+  descripcion:  Aprendiendo Ruby
+
+=end
+
 class Ruby3
   def initialize
     @presidente1 = ["Luis","Suarez",27,true]
