@@ -11,6 +11,7 @@ class Ruby5
 
   end
 
+
   def simpleBlocks
     puts 'Lo de abajo es un trozo de codigo con yields'
     yield "..! yo Soy un parametro"
@@ -54,6 +55,8 @@ class Ruby5
     puts shash2.invert
 
   end
+
+
 end
 
 obj = Ruby5.new()

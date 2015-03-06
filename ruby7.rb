@@ -7,8 +7,15 @@
 =end
 
 require_relative "ruby6.rb"
+require_relative "ruby5"
+#Mosificando Clases
+class Ruby5
+  protected def methodProtect
+    puts "soy un metodo protegido"
+  end
+end
 
-class Ruby7
+class Ruby7 < Ruby5
 
   def initialize
     obj = Ruby6.new("Luis", "Orozco")
@@ -16,13 +23,15 @@ class Ruby7
     obj.setName = "Carlos"
     puts obj.getName
     puts obj.apellido
-    obj.apellido = "Velasquez"
+    obj.apellido = "Veasquez"
     puts obj.apellido
 
-   
-
+    methodProtect();
   end
+
+
 end
 
 obj = Ruby7.new()
+obj.sayHello("Luis")
 

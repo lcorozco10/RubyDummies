@@ -4,8 +4,7 @@ class Ruby6
     @nombre = name
     @apellido = lastName
   end
-
-  def simpleFechaHora
+  private  def simpleFechaHora
     time = Time.new
     puts time.year.to_s+ "-" + time.month.to_s+ "-" + time.day.to_s
     puts time.hour.to_s+ "-" + time.min.to_s+ "-" + time.sec.to_s
@@ -16,15 +15,16 @@ class Ruby6
 
   end
 
-  def getName
+  public  def getName
     return @nombre
   end
 
-  def setName=(nombre)
+  public  def setName=(nombre)
     @nombre = nombre
   end
 
   attr_accessor :apellido
+
 end
 
 #obj = Ruby6.new
