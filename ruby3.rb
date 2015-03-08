@@ -17,6 +17,8 @@ class Ruby3
 
   def methodEach
     @presidentes.each do |x|
+
+
       x.each do |p|
         print p
         print " "
